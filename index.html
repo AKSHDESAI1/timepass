@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/60f5ad3eb1.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ya_20.css">
+    <title>Hello, world!</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .section {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        .section h2.section-head {
+            color: black;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section h2.section-head::after {
+            background: #E74C3C;
+            content: "";
+            display: block;
+            width: 100px;
+            height: 3px;
+            margin: 20px auto;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        #header {
+            color: white;
+            background: #e74c3c;
+        }
+
+        #logo {
+            font-size: 2rem;
+            margin-top: 5px;
+        }
+
+        #menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #menu li {
+            display: inline-block;
+        }
+
+        #menu li a {
+            color: white;
+            padding: 15px 10px;
+            display: block;
+        }
+
+        #menu li a:hover {
+
+            background: #c0392b;
+        }
+
+        #banner {
+            background: url('/images/a1.jpeg') no-repeat 0 0;
+            background-size: cover;
+        }
+
+        .banner-title {
+            padding-top: 5rem;
+        }
+
+        .banner-title h1 {
+            background: rgba(255, 255, 255, 0.8);
+            display: inline-block;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .banner-title p.lead {
+            color: white;
+            background: rgba(231, 76, 60, 0.7);
+            padding: 10px;
+
+        }
+
+        .service-box {
+            text-align: center;
+        }
+
+        .service-box i.fa {
+            color: #E74C3C;
+            font-size: 70px;
+            margin-bottom: 15px;
+        }
+
+        #testimonals {
+            color: white;
+            background: url('/images/phone.jpeg') no-repeat 0 0;
+            background-size: cover;
+            padding: 50px 0;
+            position: relative;
+        }
+
+        #testimonals::before {
+            background: rgba(52, 73, 94, 0.7);
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .testimonals img {
+            border-radius: 50%;
+        }
+
+
+        .news-post img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .news-post h3 {
+            font-size: 1.35rem;
+        }
+
+        .news-post h3 a {
+            color: rgb(231, 76, 60);
+            margin: 2px;
+        }
+
+        .post-date {
+            font-size: 13px;
+            margin-bottom: 2px;
+        }
+
+        #footer-sidebar {
+            color: white;
+            padding: 20px 0;
+            background: #34495e;
+
+        }
+
+        .footer-widget h4::after {
+            content: "";
+            display: block;
+            background: white;
+            width: 50px;
+            height: 2px;
+            margin: 5px 0;
+        }
+
+        .footer-widget a {
+            color: white;
+        }
+
+        .latest-news {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .latest-news li {
+            margin-bottom: 3px;
+        }
+
+        #footer {
+            background: #2c3e50;
+            color: white;
+            padding: 10px 0;
+
+        }
+
+        #social-icons {
+            list-style: none;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        #social-icons li {
+            display: inline-block;
+            padding-left: 5px;
+        }
+
+        #social-icons li a {
+            color: white;
+            font-size: 25px;
+        }
+
+        @media (max-width: 992px) {
+
+            .news-post {
+                margin-bottom: 30px;
+                opacity: 1.1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #logo {
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            #menu {
+                text-align: center;
+            }
+
+            .testimonals {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .footer-widget {
+                margin-bottom: 20px;
+            }
+
+            #footer {
+                text-align: center;
+            }
+
+            .service-box {
+                margin-bottom: 30px;
+            }
+
+            #social-icons {
+                margin-top: 10px;
+            }
+
+            .section {
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+
+            .banner-title {
+                padding-top: 0;
+            }
+
+            .banner-title h1 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 id="logo">AKSH DESAI</h1>
+                </div>
+                <div class="col-md-8">
+                    <ul id="menu" class="float-md-right">
+                        <li><a href="#banner">Home</a></li>
+                        <li><a href="#a">Products</a></li>
+                        <li><a href=" #testimonals">Gallery</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#footer-sidebar">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="banner" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-6">
+                    <div class="banner-title">
+                        <h1 class="title">Some Heading Goes Here</h1>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus reprehenderit
+                            suscipit
+                            similique officiis? Ex temporibus voluptates, magnam similique tenetur enim!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container section" id="a">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-head">Some Heading Goes Here</h2>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="service-box">
+                    <i class="fa fa-anchor"></i>
+                    <h3>Some Heading</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, vitae?</p>
+                </div>
+            </div>
+            <div class="col-sm-6  m-sm-auto col-md-4">
+                <div class="service-box">
+                    <i class="fa fa-bar-chart"></i>
+                    <h3>Some Heading</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, vitae?</p>
+                </div>
+            </div>
+            <div class="col-sm-6  m-sm-auto col-md-4">
+                <div class="service-box">
+                    <i class="fa fa-diamond"></i>
+                    <h3>Some Heading</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, vitae?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="testimonals" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-head text-white">Testimonals</h2>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonals">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque iusto, corporis
+                            aspernatur in rerum.</p>
+                        <img src="/images/bill-gates.jpeg" alt="">
+                        <div class="author">Bill Gates</div>
+                        <div class="author-company">Microsoft</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonals">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod atque iusto, corporis
+                            aspernatur in rerum.</p>
+                        <img src="/images/steve-jbs.jpeg" alt="">
+                        <div class="author">Steve Jobs</div>
+                        <div class="author-company">Apple</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="news" class="container section">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-head">Recent News</h2>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="news-post">
+                    <img src="/images/p1.jpeg" alt="">
+                    <h3><a href="">News Heading Here</a></h3>
+                    <div class="post-date"><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;April 30, 2020</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, eveniet?</p>
+                    <a href="" class="readmore" style="color: brown;">Read More&nbsp;<i
+                            class="fas fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="news-post">
+                    <img src="/images/p2.jpeg" alt="">
+                    <h3><a href="">News Heading Here</a></h3>
+                    <div class="post-date"><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;April 30, 2020</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, eveniet?</p>
+                    <a href="" class="readmore" style="color: brown;">Read More&nbsp;<i
+                            class="fas fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="news-post">
+                    <img src="/images/p3.jpeg" alt="">
+                    <h3><a href="">News Heading Here</a></h3>
+                    <div class="post-date"><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;April 30, 2020</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, eveniet?</p>
+                    <a href="" class="readmore" style="color: brown;">Read More&nbsp;<i
+                            class="fas fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="news-post">
+                    <img src="/images/p4.jpeg" alt="">
+                    <h3><a href="">News Heading Here</a></h3>
+                    <div class="post-date"><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;April 30, 2020</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, eveniet?</p>
+                    <a href="" class="readmore" style="color: brown;">Read More&nbsp;<i
+                            class="fas fa-angle-double-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer-sidebar">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="footer-widget">
+                        <h4>About Company</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti est omnis totam obcaecati
+                            repellendus. Quaerat.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, odio.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="footer-widget">
+                        <h4>Latest News</h4>
+                        <ul class="latest-news">
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>&nbsp; Lorem ipsum dolor sit
+                                    amet.</a></li>
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>&nbsp; Lorem ipsum dolor sit
+                                    amet.</a></li>
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>&nbsp; Lorem ipsum dolor sit
+                                    amet.</a></li>
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>&nbsp; Lorem ipsum dolor sit
+                                    amet.</a></li>
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>&nbsp; Lorem ipsum dolor sit
+                                    amet.</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-sm-6 col-md-4 ">
+                    <div class="footer-widget ">
+                        <h4>Company Address</h4>
+                        <address>
+                            <b>Yahoo Baba, Inc.</b><br>
+                            555 Hill Road, Ambala Cantt <br>
+                            Haryana, India 133001 <br>
+                            p : (123) 456-7890 <br>
+                        </address>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">Copyright@2020 company name.</div>
+                <div class="col-md-6">
+                    <ul id="social-icons" class="float-md-right">
+                        <li><a href="https://youtube.com/channel/UC5MvKPbIlZWn2h_9elfnJSQ" class=""><i
+                                    class="fab fa-youtube"></i></a></li>
+                        <!-- <li><a href="https://youtube.com/channel/UC5MvKPbIlZWn2h_9elfnJSQ" class=""></a><i
+                                class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://youtube.com/channel/UC5MvKPbIlZWn2h_9elfnJSQ" class=""><i
+                                    class="fab fa-youtube"></i></a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
