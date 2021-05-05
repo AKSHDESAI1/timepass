@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/ya_20.css">
-    <title>Hello, world!</title>
+    <title>AKSH DESAI</title>
     <style>
         html {
             scroll-behavior: smooth;
@@ -252,6 +252,12 @@
                 font-size: 1.7rem;
             }
         }
+
+        @media (max-width: 576px) {
+            .rudra {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -260,9 +266,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h1 id="logo">AKSH DESAI</h1>
+                    <h1 id="logo">AKSH DESAI
+                        <span id="a1">
+
+                            <i class="fas fa-bars d-sm-none" id="a2" onclick="aksh()"></i>
+                        </span>
+                        <div id="aary">
+
+                        </div>
+                    </h1>
                 </div>
-                <div class="col-md-8">
+
+                <div class="col-md-8 rudra" id="gopi">
                     <ul id="menu" class="float-md-right">
                         <li><a href="#banner">Home</a></li>
                         <li><a href="#a">Products</a></li>
@@ -448,15 +463,50 @@
                     <ul id="social-icons" class="float-md-right">
                         <li><a href="https://youtube.com/channel/UC5MvKPbIlZWn2h_9elfnJSQ" class=""><i
                                     class="fab fa-youtube"></i></a></li>
-                        <!-- <li><a href="https://youtube.com/channel/UC5MvKPbIlZWn2h_9elfnJSQ" class=""></a><i
-                                class="fab fa-youtube"></i></a></li>
-                        <li><a href="https://youtube.com/channel/UC5MvKPbIlZWn2h_9elfnJSQ" class=""><i
-                                    class="fab fa-youtube"></i></a></li> -->
+                       
                     </ul>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        let aary = document.getElementById('aary');
+        let a2 = document.getElementById('a2');
+        let a1 = document.getElementById('a1');
+        function aksh() {
+            if (aary.innerHTML != `<h5 class="m-auto ml-auto offset-2" style="border: 3px solid; background: linear-gradient(to left, purple, cyan, blue); width: 220px;"><ul id="menu" class="float-md-right">
+                <li><a href="#banner"><i class="fas fa-home"></i>&nbsp;Home</a></li> <br>
+                <li><a href="#a"><i class="fab fa-product-hunt"></i>&nbsp;Products</a></li> <br>
+                <li><a href=" #testimonals"><i class="fab fa-envira"></i>&nbsp;Gallery</a></li> <br>
+                <li><a href="#news"><i class="fas fa-newspaper"></i>&nbsp;News</a></li> <br>
+                <li><a href="#footer-sidebar"><i class="fas fa-eject"></i>&nbsp;About Us</a></li>
+                </ul> </h5>`) {
+                aary.innerHTML = `<h5 class="m-auto ml-auto offset-2" style="border: 3px solid; background: linear-gradient(to left, purple, cyan, blue); width: 220px;"><ul id="menu" class="float-md-right">
+                <li><a href="#banner"><i class="fas fa-home"></i>&nbsp;Home</a></li> <br>
+                <li><a href="#a"><i class="fab fa-product-hunt"></i>&nbsp;Products</a></li> <br>
+                <li><a href=" #testimonals"><i class="fab fa-envira"></i>&nbsp;Gallery</a></li> <br>
+                <li><a href="#news"><i class="fas fa-newspaper"></i>&nbsp;News</a></li> <br>
+                <li><a href="#footer-sidebar"><i class="fas fa-eject"></i>&nbsp;About Us</a></li>
+                </ul> </h5>`;
+                a1.innerHTML = `<i class="fas fa-times" onclick="aksh1()"></i>`
+            }
+        }
+        function aksh1() {
+        
+            aary.innerHTML = `<h5 class="m-auto ml-auto offset-2" style="border: 3px solid; background: linear-gradient(to left, purple, cyan, blue); width: 220px; display: none;"><ul id="menu" class="float-md-right">
+                <li><a href="#banner"><i class="fas fa-home"></i>&nbsp;Home</a></li> <br>
+                <li><a href="#a"><i class="fab fa-product-hunt"></i>&nbsp;Products</a></li> <br>
+                <li><a href=" #testimonals"><i class="fab fa-envira"></i>&nbsp;Gallery</a></li> <br>
+                <li><a href="#news"><i class="fas fa-newspaper"></i>&nbsp;News</a></li> <br>
+                <li><a href="#footer-sidebar"><i class="fas fa-eject"></i>&nbsp;About Us</a></li>
+                </ul> </h5>`
+            a1.innerHTML = `<i class="fas fa-bars d-sm-none" id="a2" onclick="aksh()"></i>`
+        
+
+        }
+
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
